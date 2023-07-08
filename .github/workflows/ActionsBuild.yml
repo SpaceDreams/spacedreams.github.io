@@ -51,7 +51,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r my-tools/requirements.txt
       - name: install SLiCAP
-        run: python my-tools/setup.py install --user
+        run: |
+          cd my-tools
+          python setup.py install --user
+          cd ..
       - name: execute py script # run main.py
         run: python ProjectLNA.py
       - name: Setup Pages
