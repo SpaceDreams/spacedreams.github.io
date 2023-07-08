@@ -54,6 +54,7 @@ jobs:
         run: |
           cd my-tools
           python setup.py install --user
+          sh files/lepton-eda/configure/install.sh
           cd ..
       - name: execute py script # run main.py
         run: python ProjectLNA.py
