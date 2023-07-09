@@ -16,7 +16,7 @@ on:
   
   repository_dispatch:
     types:
-      - webhook
+      - Trigger_Workflow
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
